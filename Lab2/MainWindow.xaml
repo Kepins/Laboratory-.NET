@@ -1,0 +1,29 @@
+﻿<Window x:Class="Csharp_Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Csharp_Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <ToolBar x:Name="topToolBar" VerticalAlignment="Top" Margin="10,0,175,0" Height="35" >
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open" Click="OpenOption_Click"/>
+                    <MenuItem Header="_Exit" Click="ExitOption_Click"/>
+                </MenuItem>
+            </Menu>
+        </ToolBar>
+        <TreeView x:Name="fileTreeTreeView" HorizontalAlignment="Left" Height="337" Margin="10,40,0,0" VerticalAlignment="Top" Width="346" Grid.ColumnSpan="2"/>
+        <ScrollViewer x:Name="fileContentScrollViewer" Grid.Column="1" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Left" Height="337" Margin="124,40,0,0" VerticalAlignment="Top" Width="409"/>
+        <TextBlock x:Name="StatusRASH" HorizontalAlignment="Left" Margin="10,382,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64" Height="27"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Csharp_Lab2.CreateFileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Csharp_Lab2"
+        mc:Ignorable="d"
+        Title="CreateFileWindow" Height="450" Width="420
+        ">
+    <Grid>
+        <Label HorizontalAlignment="Left" Height="37" Margin="36,56,0,0" VerticalAlignment="Top" Width="77" FontSize="16">Name</Label>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="37" Margin="139,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" FontSize="16"/>
+        <RadioButton Content="File" HorizontalAlignment="Left" Margin="76,126,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="FileDirChoice"/>
+        <RadioButton x:Name="directoryRadioBox" Content="Directory" HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top" IsChecked="False" GroupName="FileDirChoice"/>
+        <CheckBox x:Name="readOnlyCheckBox" Content="ReadOnly" HorizontalAlignment="Left" Margin="76,205,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="archiveCheckBox" Content="Archive" HorizontalAlignment="Left" Margin="76,225,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="hiddenCheckBox" Content="Hidden" HorizontalAlignment="Left" Margin="76,245,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="systemCheckBox" Content="System" HorizontalAlignment="Left" Margin="76,265,0,0" VerticalAlignment="Top"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="129,359,0,0" VerticalAlignment="Top" Width="75" Click="ButtonOK_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="209,359,0,0" VerticalAlignment="Top" Width="75" Click="ButtonCancel_Click"/>
+
+    </Grid>
+</Window>
